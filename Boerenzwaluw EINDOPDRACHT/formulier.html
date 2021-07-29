@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Waarneming </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="form-container">
+    <header>
+        <h1>Boerenzwaluw gezien? Zet 'm op de kaart!</h1>
+        <img
+            src="https://www.brabantslandschap.nl/assets/Uploads/AlgemeneFotos/_resampled/ScaleHeightWyIyMjAiXQ/Vogels-kijken-foto.jpg">
+        <h2>Zo help je de boerenzwaluw te beschermen</h2>
+        <p>Heb je een boerenzwaluw zien vliegen? Of heb je een nest ontdekt? Laat het dan alsjeblieft aan ons weten door
+            dit formulier in te vullen en te verzenden. Zo krijgen we beter zicht op aantallen en verspreiding
+            van dit mooie beestje. Alvast hartelijk dank voor je medewerking!</p>
+    </header>
+
+    <form class="form" name="waarneming" method="POST" data-netlify="true">
+        <h3>Jouw gegevens</h3>
+        <div class="form-gegevens">
+            <label>Naam:</label>
+            <input type="text" name="naam" />
+        </div>
+        <br>
+        <div class="form-gegevens">
+            <label>E-mail:</label>
+            <input type="email" name="email" />
+        </div>
+        <br>
+        <div class="form-gegevens">
+            <label>Telefoon:</label>
+            <input type="tel" name="telnr" />
+        </div>
+
+        <h3>Jouw waarneming</h3>
+        <div class="form-gegevens">
+            <label>Datum:</label>
+            <input type="date" name="datum" />
+        </div>
+        <br>
+        <div class="form-gegevens">
+            <label>Locatie:</label>
+            <input type="text" name="locatie" />
+            <br><i>(adres, naam van het gebied of GPS-coördinaten)</i>
+        </div>
+        <br>
+        <div>
+            <label>Aantal:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" value="1" />
+        </div>
+        <br>
+        <p>Geslacht:</p>
+        <div>
+            <input type="radio" id="onbekend" name="Geslacht" value="onbekend" />
+            <label for="onbekend">onbekend</label><br>
+            <input type="radio" id="man" name="Geslacht" value="man" />
+            <label for="man">man</label><br>
+            <input type="radio" id="vrouw" name="Geslacht" value="vrouw" />
+            <label for="vrouw">vrouw</label>
+        </div>
+        <br>
+        <p>Levensstadium:</p>
+        <div>
+            <input type="radio" id="stadium_onbekend" name="Stadium" value="onbekend" />
+            <label for="stadium_onbekend">onbekend</label><br>
+            <input type="radio" id="stadium_volwassen" name="Stadium" value="volwassen" />
+            <label for="stadium_volwassen">volwassen</label><br>
+            <input type="radio" id="stadium_jong" name="Stadium" value="jong" />
+            <label for="stadium_jong">jong</label>
+        </div>
+        <br>
+        <p>Gedrag:</p>
+        <div>
+            <input type="checkbox" id="vliegend" name="Gedrag" />
+            <label for="vliegend">vliegend</label><br>
+            <input type="checkbox" id="rustend" name="Gedrag" />
+            <label for="rustend">rustend</label><br>
+            <input type="checkbox" id="nestelend" name="Gedrag" />
+            <label for="nestelend">nestelend</label><br>
+            <input type="checkbox" id="broedend" name="Gedrag" />
+            <label for="broedend">broedend</label>
+        </div>
+        <br>
+        <p>Ruimte voor opmerkingen:</p>
+        <div>
+            <textarea name="opmerking" rows="10" cols="30"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Upload een foto, video of geluidsfragment:<br>
+                <br>
+                <input type="file" id="myfile" name="myfile" /></label>
+        </div>
+        <br>
+        <div>
+            <button type="reset">Wis formulier</button>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Verzend formulier</button>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
